@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
 @Component({
@@ -8,6 +8,18 @@ import { Component } from '@angular/core';
 })
 
 
+
+
+
+
 export class InputFormComponent {
-  
+  name: string | undefined;
+  yourName: string | undefined;
+  em: string | undefined;
+  email: string | undefined;
+  quote: string | undefined;
+
+  ngOnInit() {
+    this.name = "John"
+  }
 }
